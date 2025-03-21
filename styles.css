@@ -1,0 +1,767 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid red;
+}
+
+.header001 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(37, 34, 34);
+    justify-content: space-between;
+}
+
+.header001 {
+    padding: 10px 10px;
+}
+
+.header001 .left1 h5 {
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.header001 .right1 button {
+    color: white;
+    background-color: rgb(109, 158, 35);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 80%;
+}
+
+.header1 {
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('./Images/masthead.jpg');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header1 .head1 {
+    text-align: center;
+}
+
+.header1 p {
+    text-align: center;
+}
+
+.header1 .head1of2 {
+    margin-top: 100px;
+}
+
+.header1 .head1of2 .line1 {
+    border: 1px solid rgb(255, 255, 255);
+    width: 40vh;
+    font-size: 1rem;
+    margin: auto;
+}
+
+.header1 .head1of2 .middle {
+    margin: 20px 0;
+}
+
+
+.header2 .logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.header2 h4 {
+    color: rgb(173, 117, 13);
+}
+
+
+.header2 .logo i {
+    font-size: 50px;
+    color: rgb(155, 119, 72);
+}
+
+.header5 .leftimg img {
+    width: 100%;
+}
+.skills-section {
+    background-color: #fff;
+            font-family: Arial, sans-serif;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.skills-section .progress {
+    height: 8px;
+    background-color: #f0f0f0;
+}
+.skills-section .progress-bar {
+    background-color: #d4a373;
+}
+.skills-section .skill-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.skills-section .skill-container {
+    margin-bottom: 50px;
+}
+.skills-section .right-image {
+    position: relative;
+    overflow: hidden;
+}
+.skills-section .right-image img {
+    max-width: 150%;
+    height: auto;
+    position: relative;
+    right: -40%;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+.portfolio-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 23, 23, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+.portfolio-item:hover::before {
+    opacity: 1;
+}
+.portfolio-item .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+.portfolio-item .overlay h5 {
+    font-style: italic;
+    color:orange;
+    position: relative;
+    top: -20px;
+    opacity: 0;
+    transition: top 0.5s ease, opacity 0.5s ease;
+}
+.portfolio-item .overlay p {
+    position: relative;
+    bottom: -20px;
+    opacity: 0;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+}
+.portfolio-item:hover .overlay h5 {
+    top: 0;
+    opacity: 1;
+}
+ .portfolio-item:hover .overlay p {
+    bottom: 0;
+    opacity: 1;
+}
+.eight-imgs .row {
+    margin: 0;
+    padding: 0;
+}
+
+.mission {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+.mission .left2 {
+    width: fit-content;
+    margin-top: 60px;
+}
+
+.mission .left2 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.mission .left2 .box1 {
+    margin-bottom: 20px;
+}
+
+.mission .left2 .box1 p {
+    font-size: 1rem;
+    color: rgb(150, 142, 142);
+    padding-left: 40px;
+    justify-content: space-evenly;
+}
+
+.mission .left2 .box1 i {
+    margin-right: 10px;
+    margin-top: 10px;
+    display: flex;
+    float: left;
+    font-size: 25px;
+    color: rgba(180, 138, 58, 0.616);
+}
+
+.mission .right3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.mission .right3 img {
+    max-width: 150%;
+    height: auto;
+    position: relative;
+    left: -50%;
+}
+
+.about-section {
+    background-color: black;
+    color: white;
+    padding: 120px 0;
+}
+.about-section .video-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+.about-section .video-btn i {
+    font-size: 50px;
+    margin-right: 10px;
+}
+.quote {
+    font-style: italic;
+    color: #d4a373;
+}
+.header7 .head1of3 {
+    margin-top: 100px;
+}
+
+.header7 .head1of3 .line2 {
+    border: 1px solid rgb(255, 255, 255);
+    width: 40vh;
+    font-size: 1rem;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.header7 .head1of3 .middle {
+    margin: 20px 0;
+}
+
+.creativework {
+    padding: 30px 50px;
+}
+
+.creativework h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.creativework h5 {
+    padding: 10px 0px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(211, 160, 65);
+}
+
+.creativework p {
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+
+.offertemplate .OurOffers {
+    padding: 30px 50px;
+}
+
+.offertemplate .OurOffers h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.offertemplate .OurOffers h5 {
+    padding: 10px 0px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(211, 160, 65);
+}
+
+.offertemplate .OurOffers p {
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+
+.offertemplate .fourtemp .outerdiv {
+    border: 1px solid rgb(199, 190, 190);
+    margin: 5px;
+}
+
+.offertemplate .fourtemp .outerdiv h4 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.offertemplate .fourtemp .outerdiv h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(199, 190, 190);
+}
+
+.offertemplate .fourtemp .outerdiv h5 {
+    color: rgb(165, 149, 149);
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1rem;
+}
+
+.offertemplate .fourtemp .outerdiv .line {
+    border: 1px solid burlywood;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.offertemplate .fourtemp .outerdiv p {
+    margin-bottom: 10px;
+}
+
+.offertemplate .fourtemp #outthree {
+    border: 1px solid rgb(194, 131, 16);
+}
+
+.agencyteam {
+    background-color: rgb(34, 31, 31);
+    margin: 30px 0;
+}
+
+.agencyteam .agency {
+    padding: 30px 50px;
+
+}
+
+.agencyteam .agency h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.agencyteam .agency h4 {
+    padding: 10px 0px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(211, 160, 65);
+
+}
+
+.agencyteam .agency p {
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+    color: rgba(201, 191, 191, 0.671);
+}
+
+.agencyteam .team .teams h3 {
+    color: rgb(211, 160, 65);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+.team-member img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.team-member:hover img {
+    transform: scale(1.1);
+    filter: brightness(30%);
+}
+.team-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(0, 0, 0, 0.2); */
+    padding: 20px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+.team-member:hover .team-info {
+    opacity: 1;
+}
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+.social-icons a {
+    color: gold;
+    font-size: 24px;
+    transition: transform 0.3s, color 0.3s;
+}
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: white;
+}
+.team-name {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    /* background: rgba(0, 0, 0, 0.5); */
+    
+    padding: 10px;
+    color: gold;
+    font-size: 18px;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+}
+.team-member:hover .team-name {
+    opacity: 0;
+}
+.easytostart .easy {
+    padding: 30px 50px;
+}
+
+.easytostart .easy h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.easytostart .easy h4 {
+    padding: 10px 0px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(211, 160, 65);
+}
+
+.easytostart .easy p {
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+
+.easytostart .plan .plan1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.easytostart .plan .plan1 h1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 3.5rem;
+    padding: 7px;
+    font-style: bold;
+}
+
+.easytostart .plan .plan2 h3 {
+    padding: 10px 20px;
+}
+
+.easytostart .plan .plan2 p {
+    color: rgba(146, 129, 129, 0.671);
+    padding: 10px 20px;
+}
+
+.reviews {
+    background-image: url(./Images/reviews.jpg);
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+}
+
+.reviews p {
+    text-align: center;
+    color: rgba(146, 129, 129, 0.671);
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 10px;
+    justify-content: space-around;
+   
+}
+
+.reviews i {
+    text-align: center;
+    font-size: 3rem;
+    padding: 80px 0;
+}
+
+.reviews h4 {
+    padding-bottom: 150px;
+    padding-top:5px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(211, 160, 65);
+}
+
+.contactus .contacts h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10vh;
+}
+.contactus .contacts h4{
+    padding: 10px 0px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(211, 160, 65);
+}
+
+.contactus .contacts p{
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+    margin-bottom: 10vh;
+}
+
+.contdetail .cont1 .co {
+    width: 100%;
+}
+
+.contdetail .cont1 .co h4{
+    text-align: center;
+    color: rgb(145, 137, 137);
+    font-size: 1.3rem;
+}
+
+.contdetail .cont1 .co .line{
+    border: 1px solid rgb(207, 153, 51);
+    margin: 20px 20px;
+}
+
+.contdetail .mess h4{
+    text-align: left;
+    margin-left: 20px;
+    color: rgb(145, 137, 137);
+    font-size: 1.3rem;
+}
+
+.contdetail .mess{
+    margin: 50px 0;
+}
+
+.contdetail .mess .line{
+    border: 1px solid rgb(207, 153, 51);
+    margin: 20px 20px;
+}
+
+.contdetail .sendmess{
+    margin: 30px 0;
+}
+
+.contdetail .sendmess .linee{
+    border: 1px solid rgb(207, 153, 51);
+    margin: auto;
+    width: 40%;
+    justify-content: space-around;
+}
+.contdetail .sendmess h5{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.footerend{
+    background-color: black;
+    margin-top: 20vh;
+}
+.footerend .iconrule{
+    padding: 5vh 0;
+}
+
+.footerend .iconrule i{
+    color: rgba(233, 149, 53, 0.952);
+    margin: 20px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2.5rem;
+}
+
+.footerend .iconrule .logos{
+    text-align: center;
+}
+.footerend .iconrule .Rules h5{
+    color: rgba(233, 149, 53, 0.952);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.footerend .greyline{
+    border: 1px rgb(216, 202, 202) solid;
+    width: 90%;
+    margin: auto;
+}
+
+.footerend .lastfooter{
+    padding: 5vh 0;
+}
+
+.footerend .lastfooter #S1{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(211, 160, 65);
+    font-size: 2rem;
+}
+
+.footerend .lastfooter p{
+    color: rgb(216, 202, 202);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+@media only screen and (min-width:768px) {
+    .cards .card {
+        width: 50%;
+    }
+
+    .offertemplate .fourtemp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .offertemplate .fourtemp .outerdiv {
+        width: 45%;
+    }
+
+    .agencyteam .team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .agencyteam .team .teams {
+        width: 40%;
+    }
+    .contdetail .cont1{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .contdetail .cont1 .co{
+    width: 50%;
+    }
+    .footerend .iconrule .Rules{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .footerend .iconrule .Rules h5{
+        padding: 20px 20px;
+        text-align: center;   
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .cards .card {
+        width: 30%;
+    }
+
+    .offertemplate .fourtemp .outerdiv {
+        width: 20%;
+    }
+
+    .mission {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .mission .left2 {
+        width: 50%;
+    }
+
+
+    .mission .right3 {
+        display: block;
+        width: 50%;
+        
+    }
+
+    .agencyteam .team .teams {
+        width: 30%;
+    }
+
+    .easytostart .plan {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .easytostart .plan .plan1 {
+        width: 50%;
+    }
+
+    .footerend .iconrule{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .footerend .iconrule .logos{
+       width: 50%;
+       float: left;
+       left: 0px;
+    }
+    .footerend .iconrule .Rules{
+        width: 50%;
+        float: right;
+    }
+
+    .footerend .iconrule .Rules h5{
+       
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .cards .card {
+        width: 25%;
+    }
+}
